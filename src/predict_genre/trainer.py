@@ -45,5 +45,5 @@ joblib.dump(model, output_path)
 
 
 
-from .extractor import extract_features
-print(model.predict([extract_features('~/github/predict-genre/data/genres_original/blues/blues.00000.wav')]))
+#from .extractor import extract_features
+#print(model.predict([extract_features('~/github/predict-genre/data/genres_original/blues/blues.00000.wav')]))
