@@ -1,0 +1,11 @@
+pyproject.toml
+readme.md
+src/predict_genre/__init__.py
+src/predict_genre/extractor.py
+src/predict_genre/main.py
+src/predict_genre/trainer.py
+src/predict_genre.egg-info/PKG-INFO
+src/predict_genre.egg-info/SOURCES.txt
+src/predict_genre.egg-info/dependency_links.txt
+src/predict_genre.egg-info/entry_points.txt
+src/predict_genre.egg-info/top_level.txt

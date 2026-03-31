@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: predict_genre
+Version: 0.2.0
+Summary: predict the genre of music
+Author-email: deftasparagusanaconda <deftasparagusanaconda@gmail.com>
+Project-URL: Homepage, https://github.com/deftasparagusanaconda/predict-genre
+Requires-Python: >=3.11.0
+Description-Content-Type: text/markdown
+
+# predict-genre
+predict the genre of music. this was a microproject i had to do for my practical python classes in college.
+
+
+# note
+download the [gtzan dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification) and place it in `/src/data`
+
+
