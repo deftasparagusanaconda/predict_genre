@@ -15,7 +15,7 @@ def extract_features(filepath) -> Sequence[float]:
     mfccs = librosa.feature.mfcc(y=y, sr=sr, n_mfcc=N_MFCC)
     mfccs_mean = mfccs.mean(axis=1)
     mfccs_var = mfccs.var(axis=1)
-    return np.array([*mfccs_mean] + [*mfccs_var])
+    return list(mfccs_mean) + list(mfccs_var)
 
 if __name__ == '__main__':
 # no path given as command line argument
@@ -38,7 +38,7 @@ if __name__ == '__main__':
         for file in dir.iterdir():
             try:
                 features = extract_features(file)
-                rows.append([genre, *features[0]])
+                rows.append([genre, *features])
             except Exception as e:
                 print(f'skipping {file}: {e}')
                 continue
